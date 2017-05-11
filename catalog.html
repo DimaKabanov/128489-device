@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <title>Device</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-min.css">
 </head>
 <body>
     <div class="container">
         <header class="main-header  main-header-catalog">
-            <h1 class="main-header-logo">
-                <a href="">DEVICE</a>
-            </h1>
+            <a class="main-header-logo" href="index.html">
+                <img src="img/logo.png" width="164" height="36" alt="Device">
+            </a>
             <div class="main-header-bottom">
                 <div class="main-header-left">
-                    <form class="main-header-search" action="" method="post">
+                    <form class="main-header-search" action="#" method="post">
+                        <label class="hidden" for="header-search">Поиск по сайту</label>
                         <input class="main-header-search-input" id="header-search" type="search" placeholder="Поиск по сайту">
                         <input class="main-header-search-submit" type="submit" value="Найти">
                     </form>
@@ -89,10 +90,10 @@
                             <span class="filter__title-text">Фильтр:</span>
                         </div>
 
-                        <form action="" method="post">
+                        <form action="#" method="post">
 
-                            <fieldset class="filter__box  filter__box-range">
-                                <legend>Стоимость</legend>
+                            <fieldset class="filter-box  filter-box-range">
+                                <legend class="filter-box-title">Стоимость</legend>
 
                                 <div class="filter__range">
                                     <div class="filter__range-controls">
@@ -105,17 +106,17 @@
 
                                     <div class="filter__range-price">
                                         <label for="min-price">от</label>
-                                        <input type="text" name="min-price" id="min-price" value="0">
+                                        <input type="text" name="min-price" id="min-price" value="0" aria-label="Минимальная цена">
 
                                         <label for="max-price">до</label>
-                                        <input type="text" name="max-price" id="max-price" value="3000">
+                                        <input type="text" name="max-price" id="max-price" value="3000" aria-label="Максимальная цена">
 
                                     </div>
                                 </div>
                             </fieldset>
 
-                            <fieldset class="filter__box">
-                                <legend>Цвет</legend>
+                            <fieldset class="filter-box">
+                                <legend class="filter-box-title">Цвет</legend>
 
                                 <input type="checkbox" name="black" id="black">
                                 <label for="black">Черный</label>
@@ -133,8 +134,8 @@
                                 <label for="pink">Розовый</label>
                             </fieldset>
 
-                            <fieldset class="filter__box">
-                                <legend>Bluetooth</legend>
+                            <fieldset class="filter-box">
+                                <legend class="filter-box-title">Bluetooth</legend>
 
                                 <input type="radio" name="radio" id="yes">
                                 <label for="yes">Есть</label>
@@ -158,8 +159,8 @@
                                 <a href="" class="products-title-link">По популяности</a>
                             </div>
                             <div class="products-title-arrows">
-                                <span class="products-title-arrow  products-title-arrow-up"></span>
-                                <span class="products-title-arrow  products-title-arrow-down"></span>
+                                <span class="products-title-arrow  products-title-arrow-up" aria-label="Сортировка товаров по возрастанию" tabindex="0"></span>
+                                <span class="products-title-arrow  products-title-arrow-down  products-title-arrow-active" aria-label="Сортировка товаров по убыванию" tabindex="0"></span>
                             </div>
                         </div>
 
@@ -238,7 +239,7 @@
     <footer class="main-footer">
         <div class="container">
             <div class="main-footer-block">
-                <a class="main-footer-logo" href="">Device</a>
+                <img class="main-footer-logo" src="img/logo-orange.png" width="163" height="36" alt="Device">
                 <address class="main-footer-address">г. Москва, ул. Строителей, 15</address>
             </div>
             <div class="main-footer-block">

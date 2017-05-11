@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <title>Device</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-min.css">
 </head>
 <body>
     <div class="container">
         <header class="main-header">
-            <h1 class="main-header-logo">
-                <a href="">DEVICE</a>
-            </h1>
+            <div class="main-header-logo">
+                <img src="img/logo.png" width="164" height="36" alt="Device">
+            </div>
             <div class="main-header-bottom">
                 <div class="main-header-left">
-                    <form class="main-header-search" action="" method="post">
+                    <form class="main-header-search" action="#" method="post">
+                        <label class="hidden" for="header-search">Поиск по сайту</label>
                         <input class="main-header-search-input" id="header-search" type="search" placeholder="Поиск по сайту">
                         <input class="main-header-search-submit" type="submit" value="Найти">
                     </form>
                     <div class="main-header-catalog-navigation">
-                        <a class="main-header-catalog-link" href="#">Каталог товаров</a>
+                        <a class="main-header-catalog-link" tabindex="0">Каталог товаров</a>
                         <nav class="catalog-navigation">
                             <div class="catalog-navigation-inner">
                                 <ul class="catalog-navigation-items">
                                     <li><a class="catalog-navigation-link" href="#">Виртуальная реальность</a></li>
-                                    <li><a class="catalog-navigation-link" href="#">Моноподы для селфи</a></li>
+                                    <li><a class="catalog-navigation-link" href="catalog.html">Моноподы для селфи</a></li>
                                     <li><a class="catalog-navigation-link" href="#">Экшн-камеры</a></li>
                                 </ul>
                                 <ul class="catalog-navigation-items">
@@ -83,7 +84,7 @@
                     <div class="promo-slides-inner">
 
                         <!-- promo-slide-one -->
-                        <div class="promo-slide  promo-slide-one"  aria-hidden="false">
+                        <article class="promo-slide  promo-slide-one"  aria-hidden="false">
                             <img class="promo-slide-img" src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
                             <div class="promo-slide-description">
                                 <span class="promo-slide-number">01</span>
@@ -105,10 +106,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- promo-slide-two -->
-                        <div class="promo-slide  promo-slide-two"  aria-hidden="true">
+                        <article class="promo-slide  promo-slide-two"  aria-hidden="true">
                             <img class="promo-slide-img" src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
                             <div class="promo-slide-description">
                                 <span class="promo-slide-number">02</span>
@@ -122,10 +123,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </article>
 
                         <!-- promo-slide-three -->
-                        <div class="promo-slide  promo-slide-three"  aria-hidden="true">
+                        <article class="promo-slide  promo-slide-three"  aria-hidden="true">
                             <img class="promo-slide-img" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер оснащен мощным лазером">
                             <div class="promo-slide-description">
                                 <span class="promo-slide-number">03</span>
@@ -143,7 +144,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
                     <!-- promo-slides-inner end -->
                 </div>
@@ -151,27 +152,27 @@
             </section>
 
             <section class="catalog">
-                <a href="" class="catalog-link">
+                <a class="catalog-link" href="#">
                     <div class="catalog-picture  catalog-picture-vr"></div>
                     <h3 class="catalog-title">Виртуальная реальность</h3>
                 </a>
-                <a href="" class="catalog-link">
+                <a class="catalog-link" href="catalog.html">
                     <div class="catalog-picture  catalog-picture-monopod"></div>
                     <h3 class="catalog-title">Моноподы для селфи</h3>
                 </a>
-                <a href="" class="catalog-link">
+                <a class="catalog-link" href="#">
                     <div class="catalog-picture  catalog-picture-camera"></div>
                     <h3 class="catalog-title">Экшн-камеры</h3>
                 </a>
-                <a href="" class="catalog-link">
+                <a class="catalog-link" href="#">
                     <div class="catalog-picture  catalog-picture-bracelet"></div>
                     <h3 class="catalog-title">Фитнесс браслеты</h3>
                 </a>
-                <a href="" class="catalog-link">
+                <a class="catalog-link" href="#">
                     <div class="catalog-picture  catalog-picture-clock"></div>
                     <h3 class="catalog-title">Умные часы</h3>
                 </a>
-                <a href="" class="catalog-link">
+                <a class="catalog-link" href="#">
                     <div class="catalog-picture  catalog-picture-quadcopter"></div>
                     <h3 class="catalog-title">Квадрокоптеры</h3>
                 </a>
@@ -193,18 +194,18 @@
 
                 <div class="services-slider">
                     <div class="services-slider-inner">
-                        <div class="services-slide  services-slide-one"  aria-hidden="false">
+                        <article class="services-slide  services-slide-one"  aria-hidden="false">
                             <h2 class="services-slide-title">Доставка</h2>
                             <p class="services-slide-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                        </div>
-                        <div class="services-slide  services-slide-two"  aria-hidden="true">
+                        </article>
+                        <article class="services-slide  services-slide-two"  aria-hidden="true">
                             <h2 class="services-slide-title">Гарантия</h2>
                             <p class="services-slide-description">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-                        </div>
-                        <div class="services-slide  services-slide-three"  aria-hidden="true">
+                        </article>
+                        <article class="services-slide  services-slide-three"  aria-hidden="true">
                             <h2 class="services-slide-title">Кредит</h2>
                             <p class="services-slide-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -233,8 +234,8 @@
                 <div class="index-info-right">
                     <h2 class="index-info-title">Контакты</h2>
                     <p class="index-info-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <div class="index-info-map"></div>
-                    <a class="btn" href="#">Напишите нам</a>
+                    <div class="index-info-map" data-modal="js-map" tabindex="0"></div>
+                    <a class="btn  btn-write-us"  data-modal="js-write-us" href="write-us.html">Напишите нам</a>
                 </div>
             </div>
         </div>
@@ -243,7 +244,7 @@
     <footer class="main-footer">
         <div class="container">
             <div class="main-footer-block">
-                <a class="main-footer-logo" href="">Device</a>
+                <img class="main-footer-logo" src="img/logo-orange.png" width="163" height="36" alt="Device">
                 <address class="main-footer-address">г. Москва, ул. Строителей, 15</address>
             </div>
             <div class="main-footer-block">
@@ -282,12 +283,11 @@
         </div>
     </footer>
 
-    <div class="feedback-form"  role="dialog">
+    <!-- feedback-form -->
+    <div class="feedback-form  js-write-us-modal" hidden role="dialog">
         <form action="#" method="post">
 
-            <div class="modal-close" tabindex="0">
-              <span class="modal-close-cross"></span>
-            </div>
+            <button class="modal-close">Закрыть диалоговое окно</button>
 
             <div class="feedback-form-top">
                 <div class="feedback-form-field">
@@ -310,10 +310,14 @@
         </form>
     </div>
 
-    <div class="map-popup"  role="dialog">
-      <div class="modal-close" tabindex="0">
-        <span class="modal-close-cross"></span>
-      </div>
+    <!-- map-popup -->
+    <div class="map-popup  js-map-modal" hidden role="dialog">
+      <button class="modal-close">Закрыть диалоговое окно</button>
+      <div id="map" class="map-popup-inner"></div>
     </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgGXfQzzrGVG_GOo35bOL1S23bZw5uhak&callback=initMap" async defer></script>
+    <script src="js/init-map-min.js"></script>
+    <script src="js/modal-controls-min.js"></script>
 </body>
 </html>
